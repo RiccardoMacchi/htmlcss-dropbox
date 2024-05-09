@@ -255,3 +255,53 @@ nav ul li {
 .vantimg img {
     width: 100%;
 }
+
+#endbusiness {
+    width: 70%;
+    margin: 50px auto;
+}
+
+
+/* Sezione Box */
+
+#flex-box {
+    display: flex;
+    justify-content: flex-start;
+    align-items: stretch;
+}
+
+.fourbox {
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;    
+    /* Debug */
+    min-height: 500px;
+    background-color: black;
+    border: 3px solid purple;
+    
+}
+
+#displaybox {
+    width: 40%;
+    overflow: auto;
+    /* Debug */
+    background-color: yellowgreen;
+    
+}
+
+.boximg{
+    position: relative;
+    width: 50%;
+    height: 50%;
+    background-color: brown;
+}
+.boximg img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 75%;
+    margin: auto;
+}
