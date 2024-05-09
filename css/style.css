@@ -67,3 +67,30 @@
 #cont-img-h img {
     width: 120%;
 }
+
+/* Regole Offerte */
+
+#flex-container {
+    width: 70%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between
+}
+
+
+.offer.colonna {
+    width: 30%;
+    min-height: 700px;
+
+    /* Debug */
+    background-color: blueviolet;
+}
+
+.offer.row {
+    width: 70%;
+    margin: auto;
+    margin-top: 50px;
+    /* Debug */
+    background-color: blue;
+    min-height: 220px;
+}
