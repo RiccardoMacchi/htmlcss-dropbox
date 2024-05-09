@@ -23,3 +23,47 @@
     background-color: blue;
     min-height: 100px;
 }
+
+/* Regole Header  */
+
+
+#secintro{
+    background-color: aqua;
+    padding: 10%;
+}
+
+#titolo {
+    width: 85%;
+    margin: 0 auto;
+/* Debug */
+    background-color: yellow;
+    min-height: 150px;
+
+}
+
+#cont-txt-img-h{
+    min-height: 600px;
+    width: 85%;
+    margin: 0 auto;
+    display: flex;
+
+    /* Degub */
+    background-color: bisque;
+}
+#cont-txt-h {
+    width: 35%;
+    /* Debug */
+    background-color: blue;
+    height: 600px;
+}
+
+#cont-img-h{
+    width: 65%;
+    /* Debug */
+    background-color: red;
+    height: 600px;
+}
+
+#cont-img-h img {
+    width: 120%;
+}
