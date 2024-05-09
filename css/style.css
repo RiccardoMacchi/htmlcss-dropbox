@@ -5,12 +5,22 @@
     box-sizing: border-box;
 }
 
+.offer.colonna span {
+    display: block;
+}
+
+.button a {
+    background-color: black;
+
+}
+
 /* Regole Nav */
 
 #navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    width: 100%;
     min-height: 100px;
     /* Debug */
     background-color: black;
@@ -18,12 +28,26 @@
 }
 
 .navdiv {
-    width: 25%;
+    width: 30%;
+    line-height: 100px;
     /* Debug */
     background-color: blue;
     min-height: 100px;
 }
 
+.navdiv.right {
+    text-align: right;
+    padding-right: 25px;
+}
+
+ul {
+    display: inline-block;
+}
+nav ul li {
+    display: inline;
+    text-decoration: none;
+    margin-right: 20px;
+}
 /* Regole Header  */
 
 
@@ -68,19 +92,37 @@
     width: 120%;
 }
 
+/* Regole intro offerte */
+
+#introoffer {
+    width: 70%;
+    margin: auto;
+}
+
+#introoffer h2{
+    font-size: 32px;
+    padding: 25px 0;
+}
+
+#introoffer span{
+    margin-right: 25px;
+}
+
 /* Regole Offerte */
 
 #flex-container {
     width: 70%;
     margin: auto;
     display: flex;
-    justify-content: space-between
+    justify-content: space-between;
 }
 
 
 .offer.colonna {
     width: 30%;
     min-height: 700px;
+    border: 1px solid grey;
+    line-height: 200%;
 
     /* Debug */
     background-color: blueviolet;
@@ -93,4 +135,39 @@
     /* Debug */
     background-color: blue;
     min-height: 220px;
+}
+
+.foruse {
+    border: 1px solid grey;
+    padding: 10px;
+    text-align: center;
+    
+}
+
+.promo {
+    margin: 10%;
+}
+
+.promo.list ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.offer.colonna hr {
+    margin-left: 10%;
+    width: 25%;
+}
+
+
+.promo.end ul {
+    list-style-type: none;
+    /* margin: 0;
+    padding: 0; */
+
+}
+
+/* Test icone */
+.promolist li:first-child::before {
+    content: "Icone";
 }
