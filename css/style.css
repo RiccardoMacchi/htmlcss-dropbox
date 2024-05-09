@@ -117,15 +117,16 @@ nav ul li {
     justify-content: space-between;
 }
 
-
-.offer.colonna {
-    width: 30%;
+.offer {
     min-height: 700px;
     border: 1px solid grey;
     line-height: 200%;
+}
+.offer.colonna {
+    width: 30%;
 
     /* Debug */
-    background-color: blueviolet;
+    /* background-color: blueviolet; */
 }
 
 .offer.row {
@@ -133,12 +134,12 @@ nav ul li {
     margin: auto;
     margin-top: 50px;
     /* Debug */
-    background-color: blue;
+    /* background-color: blue; */
     min-height: 220px;
 }
 
 .foruse {
-    border: 1px solid grey;
+    border-bottom: 1px solid grey;
     padding: 10px;
     text-align: center;
     
@@ -164,10 +165,93 @@ nav ul li {
     list-style-type: none;
     /* margin: 0;
     padding: 0; */
+}
 
+.promotyperow {
+    margin: 3%;
+    position: relative;
+}
+
+#entcontact {
+    position: absolute;
+    top: 3%;
+    right: 3%;
 }
 
 /* Test icone */
 .promolist li:first-child::before {
     content: "Icone";
+}
+
+
+
+/* Sezione partner Dropbox */
+
+
+#divpartner{
+    width: 70%;
+    margin: auto;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 50px;
+
+    /* Debug */
+    background-color: purple;
+}
+
+#imgpartner {
+    width: 60%;
+    height: 100%;
+    /* Debug */
+    background-color: bisque;
+    
+
+}
+
+#txtpartner {
+    width: 40%;
+    margin-top: 10%;
+    /* Debug */
+    background-color: rgb(169, 132, 86);
+    height: 300px;
+}
+
+#txtpartner h3 {
+    margin-top: 10%;
+    margin-bottom: 5%;
+}
+
+#imgpartner img {
+    width: 100%;
+}
+
+
+/* Regole Business Dropbox */
+
+#flex-business {
+    width: 70%;
+    margin: auto;
+    display: flex;
+    justify-content: flex-start;
+    align-items: stretch;
+    flex-wrap: wrap;
+    gap: 30px;
+    /* Debug */
+
+    min-height: 500px;
+    background-color: blue;
+}
+
+
+.vantbusiness {
+    width: calc((100% / 3) - 20px);
+    /* Debug */
+    min-height: 250px;
+    background-color: brown;
+}
+
+
+.vantimg img {
+    width: 100%;
 }
