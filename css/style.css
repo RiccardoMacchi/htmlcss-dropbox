@@ -1,0 +1,25 @@
+/* Regole  Generali */
+
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* Regole Nav */
+
+#navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 100px;
+    /* Debug */
+    background-color: black;
+    /* position: fixed; */
+}
+
+.navdiv {
+    width: 25%;
+    /* Debug */
+    background-color: blue;
+    min-height: 100px;
+}
