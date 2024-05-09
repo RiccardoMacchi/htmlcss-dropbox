@@ -305,3 +305,23 @@ nav ul li {
     width: 75%;
     margin: auto;
 }
+
+/* Regole Footer business */
+
+#footbusiness {
+    background-color: #b4d0e7;
+    min-height: 350px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#footbusiness h2 {
+    margin-right: 10%;
+    font-size: 60px;
+}
+
+#footbusiness div {
+    max-width: 40%;
+}
