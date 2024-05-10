@@ -95,7 +95,7 @@ nav ul li {
 /* Regole intro offerte */
 
 #introoffer {
-    width: 70%;
+    width: 60%;
     margin: auto;
 }
 
@@ -111,7 +111,7 @@ nav ul li {
 /* Regole Offerte */
 
 #flex-container {
-    width: 70%;
+    width: 60%;
     margin: auto;
     display: flex;
     justify-content: space-between;
@@ -130,7 +130,7 @@ nav ul li {
 }
 
 .offer.row {
-    width: 70%;
+    width: 60%;
     margin: auto;
     margin-top: 50px;
     /* Debug */
@@ -189,7 +189,7 @@ nav ul li {
 
 
 #divpartner{
-    width: 70%;
+    width: 60%;
     margin: auto;
     display: flex;
     justify-content: flex-start;
@@ -229,12 +229,12 @@ nav ul li {
 
 /* Regole Business Dropbox */
 #startbusiness {
-    width: 70%;
+    width: 60%;
     margin: 80px auto;
 }
 
 #flex-business {
-    width: 70%;
+    width: 60%;
     margin: auto;
     display: flex;
     justify-content: flex-start;
@@ -261,7 +261,7 @@ nav ul li {
 }
 
 #endbusiness {
-    width: 70%;
+    width: 60%;
     margin: 50px auto;
 }
 
@@ -334,7 +334,7 @@ nav ul li {
 /* Regole Q&A */
 
 .divqa{
-    width: 70%;
+    width: 60%;
     margin: 150px auto;
 }
 
@@ -353,4 +353,33 @@ nav ul li {
 .domande span{
     float: right;
     margin-right: 50px;
+}
+
+
+/* Regole Footer */
+
+#footersec{
+    padding: 100px 0;
+    background-color: black;
+    color: #ffff;
+}
+
+#footer-flex {
+    width: 80%;
+    margin: auto;
+    /* padding-top: 70px; */
+    display: flex;
+    justify-content: space-between;
+
+}
+
+#footerl {
+    width: 80%;
+    margin: auto;
+}
+
+#footerl hr {
+    margin-top: 70px;
+    margin-bottom: 50px;
+    width: 10%;
 }
