@@ -22,16 +22,16 @@
     align-items: center;
     width: 100%;
     min-height: 100px;
-    /* Debug */
-    background-color: black;
-    /* position: fixed; */
+    position: fixed;
+    z-index: 10;
+    background-color: #ffff;
+    
 }
 
 .navdiv {
     width: 30%;
     line-height: 100px;
-    /* Debug */
-    background-color: blue;
+    background-color: #ffff;
     min-height: 100px;
 }
 
@@ -120,7 +120,7 @@ nav ul li {
 .offer {
     min-height: 700px;
     border: 1px solid grey;
-    line-height: 200%;
+    /* margin: 40px 0; */
 }
 .offer.colonna {
     width: 30%;
@@ -228,6 +228,10 @@ nav ul li {
 
 
 /* Regole Business Dropbox */
+#startbusiness {
+    width: 70%;
+    margin: 80px auto;
+}
 
 #flex-business {
     width: 70%;
@@ -324,4 +328,29 @@ nav ul li {
 
 #footbusiness div {
     max-width: 40%;
+}
+
+
+/* Regole Q&A */
+
+.divqa{
+    width: 70%;
+    margin: 150px auto;
+}
+
+.divqa h2 {
+    margin-bottom: 50px;
+}
+
+.domande {
+    text-align: left;
+    margin: 30px auto;
+}
+
+.domande h4{
+    display: inline;    
+}
+.domande span{
+    float: right;
+    margin-right: 50px;
 }
