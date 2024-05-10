@@ -3,15 +3,19 @@
 *{
     margin: 0;
     box-sizing: border-box;
+    font-family: "Open Sans", sans-serif;
 }
 
 .offer.colonna span {
     display: block;
 }
 
-.button a {
-    background-color: black;
 
+.abutton {
+    background-color: #0061ff;
+    padding: 7px 25px;
+    color: #ffff;
+    text-decoration: none;
 }
 
 /* Regole Nav */
@@ -21,7 +25,7 @@
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    min-height: 100px;
+    min-height: 80px;
     position: fixed;
     z-index: 10;
     background-color: #ffff;
@@ -29,15 +33,16 @@
 }
 
 .navdiv {
-    width: 30%;
-    line-height: 100px;
+    width: 50%;
+    line-height: 80px;
     background-color: #ffff;
-    min-height: 100px;
+    min-height: 80px;
+    padding-left: 30px;
+    padding-right: 30px;
 }
 
 .navdiv.right {
     text-align: right;
-    padding-right: 25px;
 }
 
 ul {
@@ -46,46 +51,59 @@ ul {
 nav ul li {
     display: inline;
     text-decoration: none;
-    margin-right: 20px;
+    margin-right: 50px;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: #000000;
 }
 /* Regole Header  */
 
 
 #secintro{
-    background-color: aqua;
-    padding: 10%;
+    background-color: #b4d0e7;
+    padding-top: 10%;
 }
 
 #titolo {
-    width: 85%;
+    width: 80%;
     margin: 0 auto;
-/* Debug */
-    background-color: yellow;
-    min-height: 150px;
+    margin-bottom: 50px;
+    font-size: 55px;
 
 }
 
 #cont-txt-img-h{
     min-height: 600px;
-    width: 85%;
+    width: 80%;
     margin: 0 auto;
     display: flex;
 
     /* Degub */
-    background-color: bisque;
+    /* background-color: bisque; */
 }
 #cont-txt-h {
     width: 35%;
     /* Debug */
-    background-color: blue;
+    /* background-color: blue; */
     height: 600px;
+}
+
+#cont-txt-h div {
+    margin: 40px 0px;
+}
+
+.fa-solid.fa-arrow-down {
+    margin-top: 85px;
+    font-size: 50px;
 }
 
 #cont-img-h{
     width: 65%;
     /* Debug */
-    background-color: red;
-    height: 600px;
+    /* background-color: red;
+    height: 600px; */
 }
 
 #cont-img-h img {
@@ -96,16 +114,18 @@ nav ul li {
 
 #introoffer {
     width: 60%;
-    margin: auto;
+    margin: 80px auto;
 }
 
 #introoffer h2{
-    font-size: 32px;
+    font-size: 42px;
     padding: 25px 0;
+    margin: 25px 0;
 }
 
 #introoffer span{
-    margin-right: 25px;
+    margin: 45px;
+    margin-left: 3px;
 }
 
 /* Regole Offerte */
@@ -145,14 +165,48 @@ nav ul li {
     
 }
 
+#buttonprova {
+    margin: auto;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
 .promo {
     margin: 10%;
+    font-size: 18px;
 }
+
+.promo.type span {
+    margin: 15px 0;
+}
+
+.promo.list span a {
+    color: blue;
+}
+
+.promo.list li {
+    margin: 25px 0;
+}
+
+.singoleuser {
+    list-style-image: url(../img/imgcss/user-solid.svg);
+}
+.promo.list li:nth-child(2) {
+    list-style-image: url(../img/imgcss/folder-solid.svg);
+}
+.promo.list li:nth-child(3) {
+    list-style-image: url(../img/imgcss/share-nodes-solid.svg);
+}
+.moreuser{
+    list-style-image: url(../img/imgcss/users-solid.svg);
+}
+
 
 .promo.list ul{
     list-style-type: none;
-    margin: 0;
-    padding: 0;
+    list-style-position: outside;
+    margin: 25px 0;
+    padding-left: 15px;
 }
 
 .offer.colonna hr {
@@ -163,13 +217,33 @@ nav ul li {
 
 .promo.end ul {
     list-style-type: none;
-    /* margin: 0;
-    padding: 0; */
+    list-style-position: outside;
+    margin: 25px 0;
+    padding-left: 15px;
+}
+
+.promo.end li {
+    margin: 25px 0;
+    list-style-image: url(../img/imgcss/check-solid.svg);
 }
 
 .promotyperow {
     margin: 3%;
     position: relative;
+}
+
+.promotyperow h3 {
+    margin-bottom: 20px;
+    font-size: 28px;
+}
+
+.promotyperow h6 {
+    margin-bottom: 50px;
+    font-size: 18px;
+}
+
+.promotyperow p {
+    width: 70%;
 }
 
 #entcontact {
@@ -190,21 +264,21 @@ nav ul li {
 
 #divpartner{
     width: 60%;
-    margin: auto;
+    margin: 120px auto;
     display: flex;
     justify-content: flex-start;
     align-items: flex-start;
     gap: 50px;
 
     /* Debug */
-    background-color: purple;
+    /* background-color: purple; */
 }
 
 #imgpartner {
     width: 60%;
     height: 100%;
     /* Debug */
-    background-color: bisque;
+    /* background-color: bisque; */
     
 
 }
@@ -213,13 +287,24 @@ nav ul li {
     width: 40%;
     margin-top: 10%;
     /* Debug */
-    background-color: rgb(169, 132, 86);
-    height: 300px;
+    /* background-color: rgb(169, 132, 86);
+    height: 300px; */
 }
 
 #txtpartner h3 {
     margin-top: 10%;
     margin-bottom: 5%;
+    font-size: 28px;
+}
+
+#txtpartner p{
+    margin-bottom: 30px;
+}
+
+.abutton.partner {
+    background-color: #ffff;
+    color: grey;
+    border: 1px solid grey;
 }
 
 #imgpartner img {
