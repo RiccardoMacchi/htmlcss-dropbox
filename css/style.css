@@ -1,7 +1,7 @@
 /* Regole  Generali */
 
 *{
-    margin: 0;
+    margin: 0px;
     box-sizing: border-box;
     font-family: "Open Sans", sans-serif;
 }
@@ -13,7 +13,7 @@
 
 .abutton {
     background-color: #0061ff;
-    padding: 7px 25px;
+    padding: 7px 12px;
     color: #ffff;
     text-decoration: none;
 }
@@ -26,7 +26,6 @@
     align-items: center;
     width: 100%;
     min-height: 80px;
-    position: fixed;
     z-index: 10;
     background-color: #ffff;
     
@@ -63,13 +62,13 @@ nav ul li a{
 
 #secintro{
     background-color: #b4d0e7;
-    padding-top: 10%;
+    padding-top: 5%;
 }
 
 #titolo {
     width: 80%;
     margin: 0 auto;
-    margin-bottom: 50px;
+    margin-bottom: 60px;
     font-size: 55px;
 
 }
@@ -94,9 +93,16 @@ nav ul li a{
     margin: 40px 0px;
 }
 
+#annulla{
+    text-decoration: none;
+    color: black;
+}
+
 .fa-solid.fa-arrow-down {
-    margin-top: 85px;
+    margin-top: 30%;
     font-size: 50px;
+    cursor: pointer;
+    color: #000000;
 }
 
 #cont-img-h{
@@ -107,14 +113,14 @@ nav ul li a{
 }
 
 #cont-img-h img {
-    width: 120%;
+    width: 110%;
 }
 
 /* Regole intro offerte */
 
 #introoffer {
     width: 60%;
-    margin: 80px auto;
+    margin: 60px auto;
 }
 
 #introoffer h2{
@@ -168,6 +174,9 @@ nav ul li a{
 #buttonprova {
     margin: auto;
     margin-bottom: 40px;
+    width: 100%;
+    padding: 7px 0;
+    background-color: #0061ff;
     text-align: center;
 }
 
@@ -217,14 +226,24 @@ nav ul li a{
 
 .promo.end ul {
     list-style-type: none;
-    list-style-position: outside;
-    margin: 25px 0;
+    margin: 25px auto;
     padding-left: 15px;
 }
 
 .promo.end li {
-    margin: 25px 0;
+    /* margin: 0;
+	padding: 15px 0 15px 27px;
+	list-style: none;
+	background-image: url("../img/imgcss/check-solid.svg");
+	background-repeat: no-repeat;
+	background-position: left center;
+	background-size: 20px; */
     list-style-image: url(../img/imgcss/check-solid.svg);
+    margin: 25px 0;
+}
+
+::marker {
+    font-size: 32px;
 }
 
 .promotyperow {
@@ -285,7 +304,6 @@ nav ul li a{
 
 #txtpartner {
     width: 40%;
-    margin-top: 10%;
     /* Debug */
     /* background-color: rgb(169, 132, 86);
     height: 300px; */
@@ -315,7 +333,8 @@ nav ul li a{
 /* Regole Business Dropbox */
 #startbusiness {
     width: 60%;
-    margin: 80px auto;
+    margin: 60px auto;
+    font-size: 22px;
 }
 
 #flex-business {
@@ -328,16 +347,21 @@ nav ul li a{
     gap: 30px;
     /* Debug */
 
-    min-height: 500px;
-    background-color: blue;
+    /* min-height: 500px;
+    background-color: blue; */
 }
 
 
 .vantbusiness {
     width: calc((100% / 3) - 20px);
     /* Debug */
-    min-height: 250px;
-    background-color: brown;
+    /* min-height: 250px;
+    background-color: brown; */
+}
+
+.vanttxt h3 {
+    margin-bottom: 20px;
+    font-size: 30px;
 }
 
 
@@ -345,11 +369,28 @@ nav ul li a{
     width: 100%;
 }
 
-#endbusiness {
-    width: 60%;
-    margin: 50px auto;
+.abutton.freetry {
+    background-color: #ffff;
+    color: #000000;
+    padding: 7px 35px;
 }
 
+#endbusiness {
+    width: 60%;
+    margin: 200px auto;
+}
+
+#endbusinesstxt {
+    width: 70%;
+}
+
+#endbusiness h2 {
+    margin-bottom: 60px;
+    font-size: 50px;
+}
+#endbusiness a{
+    color: blue;
+}
 
 /* Sezione Box */
 
@@ -366,17 +407,18 @@ nav ul li a{
     align-items: center;
     flex-wrap: wrap;    
     /* Debug */
-    min-height: 500px;
-    background-color: black;
-    border: 3px solid purple;
-    
+    min-height: 550px;
+    /* background-color: black;
+    border: 3px solid purple;    */
 }
+
+
 
 #displaybox {
     width: 40%;
     overflow: auto;
     /* Debug */
-    background-color: yellowgreen;
+    background-color: #f5f5f5;
     
 }
 
@@ -384,7 +426,7 @@ nav ul li a{
     position: relative;
     width: 50%;
     height: 50%;
-    background-color: brown;
+    /* background-color: brown; */
 }
 .boximg img {
     position: absolute;
@@ -395,24 +437,79 @@ nav ul li a{
     margin: auto;
 }
 
+.designit{
+    width: 50%;
+    background-color: #a2d39b;
+}
+
+.arizona{
+    width: 50%;
+    background-color: #61082b;
+}
+
+.florida{
+    width: 50%;
+    background-color: #0093ce;
+}
+
+.topps{
+    width: 50%;
+    background-color: #ff1c1c;
+}
+
+.bicycle{
+    width: 50%;
+    background-color: #d5001f;
+}
+
+.heart{
+    width: 50%;
+    background-color: #b4d0e7;
+}
+
+.lonely{
+    width: 50%;
+    background-color: #0d2481;
+}
+
+.clear{
+    width: 50%;
+    background-color: #ffd830;
+}
+
 /* Regole Footer business */
 
 #footbusiness {
     background-color: #b4d0e7;
-    min-height: 350px;
     width: 100%;
-    display: flex;
+    position: relative;
+    /* display: flex;
     align-items: center;
-    justify-content: center;
+    min-height: 350px;
+    justify-content: center; */
 }
 
-#footbusiness h2 {
-    margin-right: 10%;
-    font-size: 60px;
+#footbusinesstxt h2 {
+    /* margin-right: 10%; */
+    font-size: 50px;
+}
+#footbusinesscontainer{
+    height: 350px;
+    max-width: 60%;
+    margin: auto;
 }
 
-#footbusiness div {
-    max-width: 40%;
+#footbusinesstxt {
+    padding-top: 100px;
+    width: 65%;
+}
+
+#footbusinesstxt a {
+    position: absolute;
+    left: 70%;
+    top: 40%;
+    transform: translate(-50%,-50%);
+    z-index: ;
 }
 
 
@@ -425,6 +522,7 @@ nav ul li a{
 
 .divqa h2 {
     margin-bottom: 50px;
+    font-size: 30px;
 }
 
 .domande {
@@ -438,6 +536,17 @@ nav ul li a{
 .domande span{
     float: right;
     margin-right: 50px;
+}
+
+.risposta {
+    display: none;
+    padding: 10px;
+    background-color: #f5f5f5;
+    border-radius: 10px;
+}
+
+.domande:hover .risposta{
+    display: inline-block;
 }
 
 
@@ -467,4 +576,23 @@ nav ul li a{
     margin-top: 70px;
     margin-bottom: 50px;
     width: 10%;
+}
+
+.footerlist a {
+    text-decoration: none;
+    color: #ffff;
+}
+
+.footerlist ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.footerlist li {
+    line-height: 280%;
+}
+
+.footerlist h3 {
+    margin-bottom: 25px;
 }
