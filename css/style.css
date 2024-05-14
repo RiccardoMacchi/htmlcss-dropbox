@@ -42,22 +42,66 @@
 
 .navdiv.right {
     text-align: right;
+    position: relative;
 }
 
 ul {
     display: inline-block;
 }
-nav ul li {
+.navdiv ul li {
     display: inline;
+    list-style: none;
     text-decoration: none;
     margin-right: 50px;
 }
 
+.right {
+    position: relative;
+}
+
+#supporto:hover #menusupporto{
+    display: inline-block;
+}
+
+#menusupporto {
+    display: none;
+    position: absolute;
+    left: 0;
+    top: 50px;
+    padding-top: 15px;
+    background-color: #ffff;
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+#menusupporto li {
+    display: block;
+    line-height: 40px;
+    text-align: center;
+    margin: 5px;
+
+}
+
+#menusupporto li:hover {
+    text-decoration: underline;
+    color: #b4d0e7;
+}
+
+
 nav ul li a{
     text-decoration: none;
     color: #000000;
+    padding-bottom: 27px;
 }
+
+nav ul li:hover a {
+    border-bottom: 2px solid #0061ff;
+}
+
+
 /* Regole Header  */
+
+
 
 
 #secintro{
@@ -74,7 +118,7 @@ nav ul li a{
 }
 
 #cont-txt-img-h{
-    min-height: 600px;
+    height: 500px;
     width: 80%;
     margin: 0 auto;
     display: flex;
@@ -121,6 +165,7 @@ nav ul li a{
 #introoffer {
     width: 60%;
     margin: 60px auto;
+    margin-top: 160px;
 }
 
 #introoffer h2{
@@ -405,7 +450,8 @@ nav ul li a{
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-wrap: wrap;    
+    flex-wrap: wrap;
+    position: relative;
     /* Debug */
     min-height: 550px;
     /* background-color: black;
@@ -414,18 +460,91 @@ nav ul li a{
 
 
 
+
 #displaybox {
     width: 40%;
     overflow: auto;
     /* Debug */
     background-color: #f5f5f5;
-    
 }
+
+/* Hover designit */
+#pdesignit {
+    display: none;
+    width: 100%;
+    position: absolute;
+    left: 220%;
+    top: 10%;
+}
+
+#pdesignit p {
+    margin-top: 50px;
+}
+
+#pdesignit img {
+    margin-top: 50px;
+    position: relative;
+    width: 100%;
+}
+
+.designit:hover #pdesignit{
+    display: inline-block;
+}
+
+/* Hover arizona */
+#parizona {
+    display: none;
+    width: 100%;
+    position: absolute;
+    left: 120%;
+    top: 15%;
+}
+
+#parizona p {
+    margin-top: 0px;
+}
+
+#parizona img {
+    margin-top: 100px;
+    position: relative;
+    width: 100%;
+}
+
+.arizona:hover #parizona{
+    display: inline-block;
+}
+
+
+/* Hover florida */
+#pflorida {
+    display: none;
+    width: 100%;
+    position: absolute;
+    bottom: 65%;
+    left: 220%;
+}
+
+#pflorida p {
+    margin-top: 100px;
+}
+
+#pflorida img {
+    margin-top: 100px;
+    position: relative;
+    width: 100%;
+}
+
+.florida:hover #pflorida{
+    display: inline-block;
+}
+
+
 
 .boximg{
     position: relative;
     width: 50%;
     height: 50%;
+    cursor: pointer;
     /* background-color: brown; */
 }
 .boximg img {
